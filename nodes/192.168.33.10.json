@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "recipe[pi::default]"
+  ],
+  "vim": {
+    "install_method": "package",
+    "extra_packages": []
+  }
+}
