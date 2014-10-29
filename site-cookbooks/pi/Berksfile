@@ -4,3 +4,4 @@ metadata
 
 cookbook "git"
 cookbook "vim"
+cookbook "cups", git: "https://github.com/biola/chef-cookbooks.git", rel: "cups"

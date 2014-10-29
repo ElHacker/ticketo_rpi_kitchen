@@ -2,8 +2,28 @@
   "run_list": [
     "recipe[pi::default]"
   ],
+  "user": "vagrant",
   "vim": {
     "install_method": "package",
     "extra_packages": []
+  },
+  "cups": {
+    "printers": [
+      {
+        "tofile": {
+          "desc": "tofile",
+          "uri": "socket://localhost:12000",
+          "model": "CUPS-PDF.ppd",
+          "location": "Ticketo Store"
+        }
+      },
+      {
+        "Ticketo_Printer": {
+          "desc": "Ticketo_Printer",
+          "uri": "usb://Unknown/Printer",
+          "location": "Ticketo Store"
+        }
+      }
+    ]
   }
 }
